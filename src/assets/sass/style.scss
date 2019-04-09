@@ -17,7 +17,7 @@ body {
 	font-family: 'Open Sans', 'Arial', sans-serif;
 	font-size: 14px;
 	line-height: 1.67;
-	// color: $tundora;
+	color: $mine-shaft;
 	background: $white;
 }
 
@@ -66,3 +66,5 @@ a {
 @import "blocks/header";
 @import "blocks/header-nav";
 @import "blocks/header-main";
+@import "blocks/header-menu";
+@import "blocks/main-nav";
