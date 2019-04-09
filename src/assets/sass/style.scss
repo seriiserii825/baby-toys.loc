@@ -51,39 +51,15 @@ p {
 	display: none;
 }
 
-.container-big {
-	margin: 0 auto;
-	width: 1250px;
-	// outline: 1px solid #008000;
-}
-
-@media screen and (max-width: $xl) {
-	.container-big {
-		width: 768px;
-	}
-}
-
-@media screen and (max-width: $md) {
-	.container-big {
-		padding: 0 30px;
-		width: 320px;
-	}
-}
-
 .container {
 	margin: 0 auto;
-	width: 1050px;
-	// outline: 1px solid #f00;
+	padding: 0 15px;
+	max-width: 1140px;
 }
 
-p.light {
-	font-weight: 300;
+a {
+	text-decoration: none;
 }
 
-p.bold {
-	font-weight: 700;
-}
-
-p.semibold {
-	font-weight: 600;
-}
+@import "blocks/header";
+@import "blocks/header-nav";

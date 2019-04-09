@@ -1,0 +1,28 @@
+mixin headerNavLink (link, text)
+	li.header-nav__item
+		a(href= link).header-nav__link= text
+
+header.header
+	.header__top-wrap
+		.container
+			.header__top
+				nav.header__nav.header-nav
+					ul.header-nav__list
+						+headerNavLink('#', 'О компании')
+						+headerNavLink('#', 'Доставка и оплата')
+						+headerNavLink('#', 'Акции')
+						+headerNavLink('#', 'Оптовикам')
+						+headerNavLink('#', 'Новости')
+						+headerNavLink('#', 'Гарантии')
+						+headerNavLink('#', 'Контакты')
+				//-  nav.header__nav.header-nav
+
+				nav.header__nav.header__nav--right.header-nav
+					ul.header-nav__list
+						+headerNavLink('#', 'Регистрация')
+						+headerNavLink('#', 'Вход')
+				//-  nav.header__nav.header-nav
+		//- .container
+	//- header__top
+	.header__bottom
+//- header
