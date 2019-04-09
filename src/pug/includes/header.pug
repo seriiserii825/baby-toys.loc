@@ -5,24 +5,9 @@ mixin headerNavLink (link, text)
 header.header
 	.header__top-wrap
 		.container
-			.header__top
-				nav.header__nav.header-nav
-					ul.header-nav__list
-						+headerNavLink('#', 'О компании')
-						+headerNavLink('#', 'Доставка и оплата')
-						+headerNavLink('#', 'Акции')
-						+headerNavLink('#', 'Оптовикам')
-						+headerNavLink('#', 'Новости')
-						+headerNavLink('#', 'Гарантии')
-						+headerNavLink('#', 'Контакты')
-				//-  nav.header__nav.header-nav
-
-				nav.header__nav.header__nav--right.header-nav
-					ul.header-nav__list
-						+headerNavLink('#', 'Регистрация')
-						+headerNavLink('#', 'Вход')
-				//-  nav.header__nav.header-nav
+			include header-top
 		//- .container
-	//- header__top
-	.header__bottom
+
+	include header-main
+	include header-menu
 //- header
