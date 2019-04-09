@@ -1,21 +1,30 @@
-.header-main
+.header__main
 	.container
-		.header__logo.logo
-			img(src="assets/i/logo.jpg", alt="logo")
-	.header__phones
-		.header__item
-			a(href="tel:84951203034").header__phone 8 (495) 120-30-34
-			a(href="").header__link Заказать звонок
+		.header__content
+			.header__logo.logo
+				img(src="assets/i/logo.jpg", alt="logo")
 
-		.header__item
-			a(href="tel:88007077518").header__phone 8 (800) 707-75-18
-			a(href="").header__link Звонок бесплатный
+			.header__phones
+				.header__item
+					a(href="tel:84951203034").header__phone 8 (495) 120-30-34
+					a(href="").header__link Заказать звонок
 
-	.header__address.header-address
-		+icon('icon-location', 'location')
+				.header__item
+					a(href="tel:88007077518").header__phone 8 (800) 707-75-18
+					a(href="").header__desc Звонок бесплатный
 
-	.header__address.header-address
-		+icon('icon-basket', 'basket')
+			.header__address.header-address
+				+icon('icon-placeholder', 'placeholder')
+				span.header-address__text Москва, пр-т Андропова, 11 к. 2, павильон № 1/2
 
-//- Москва, пр-т Андропова, 11
-//- к. 2, павильон № 1/2
+			.header__shop
+				.header-goods
+					span.header-goods__price 0 &#8381;
+					span.header-goods__count 0 товаров
+				.header-basket
+					+icon('icon-basket', 'basket')
+					span.header-basket__text Корзина
+
+
+
+
