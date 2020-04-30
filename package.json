@@ -4,7 +4,7 @@
   "main": "original_gulpfile.js",
   "dependencies": {
     "gulp-cheerio": "^0.6.3",
-    "jquery": "^3.4.1",
+    "jquery": "^3.5.0",
     "slick": "^1.12.2",
     "slick-carousel": "^1.8.1",
     "ttf2woff2": "^2.0.3"
